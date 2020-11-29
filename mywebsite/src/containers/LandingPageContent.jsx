@@ -1,4 +1,5 @@
 import React from "react";
+import { Element, scroller } from "react-scroll";
 import styled from "styled-components";
 import BackgroundImg from "../assets/images/img.png";
 import { LogoAndContent } from "../components/Caption/logoSection";
@@ -25,14 +26,27 @@ const FilterBackground = styled.div`
   align-items: center;
 `;
 
+const DownArrowContainer = styled.div`
+  margin: 4px;
+`;
+
 export function SectionUp(props) {
+
+  const scrollToNextSection = () => {
+    scroller.scrollTo("AboutSection", { smooth: true, duration: 1500 });
+  };
+
   return (
-    <Container>
-      <FilterBackground>
-        <Navigation />
-        <LogoAndContent />
-        <ScrollDown />
-      </FilterBackground>
-    </Container>
+    <Element name="Sectionup">
+      <Container>
+        <FilterBackground>
+          <Navigation />
+          <LogoAndContent />
+          <DownArrowContainer onClick={scrollToNextSection}>
+            <ScrollDown />
+          </DownArrowContainer>
+        </FilterBackground>
+      </Container>
+    </Element>
   );
 }

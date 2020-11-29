@@ -35,8 +35,7 @@ export function Navigation(props) {
       <Name>Strawby</Name>
       <MenuItems>
         <Navlink>Home</Navlink>
-        <Navlink>About</Navlink>
-        <Navlink>Projects</Navlink>
+        <Navlink>Services</Navlink>
         <Navlink>Contact</Navlink>
       </MenuItems>
     </Container>

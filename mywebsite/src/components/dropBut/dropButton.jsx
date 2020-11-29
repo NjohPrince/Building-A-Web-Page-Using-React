@@ -14,7 +14,7 @@ const ArrowContainer = styled.div`
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 255ms ease-in-out;
-  margin-top: 25px;
+  margin-top: 15px;
 
   &:hover {
     border: 2px solid yellow;
