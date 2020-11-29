@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BackgroundImg from "../assets/images/img.png";
+import { Navigation } from "../components/header/navigator";
 
 const Container = styled.div`
   width: 100%;
@@ -26,6 +27,7 @@ export function SectionUp(props) {
   return (
     <Container>
       <FilterBackground>
+        <Navigation />
       </FilterBackground>
     </Container>
   );
