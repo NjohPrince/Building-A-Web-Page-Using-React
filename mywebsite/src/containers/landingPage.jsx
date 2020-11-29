@@ -12,7 +12,7 @@ const HomeContainer = styled.div`
 export function LandingPage(props){
     return ( 
     <HomeContainer>
-      <h1>New React Project</h1>
+      <SectionUp />
     </HomeContainer>
     );
 }
