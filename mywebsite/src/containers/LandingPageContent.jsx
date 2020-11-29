@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BackgroundImg from "../assets/images/img.png";
 import { LogoAndContent } from "../components/Caption/logoSection";
+import { ScrollDown } from "../components/dropBut/dropButton";
 import { Navigation } from "../components/header/navigator";
 
 const Container = styled.div`
@@ -30,6 +31,7 @@ export function SectionUp(props) {
       <FilterBackground>
         <Navigation />
         <LogoAndContent />
+        <ScrollDown />
       </FilterBackground>
     </Container>
   );
