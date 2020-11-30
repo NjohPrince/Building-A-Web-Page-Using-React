@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { AboutSection } from './aboutSection';
 import { SectionUp } from './LandingPageContent';
+import { SectionSlide } from './simpleReactCarousel';
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ export function LandingPage(props){
     <HomeContainer>
       <SectionUp />
       <AboutSection />
+      <SectionSlide />
     </HomeContainer>
     );
 }
