@@ -6,6 +6,7 @@ import { CaptionText } from "../components/textCaption/caption";
 import { CardView } from "../components/card/card";
 
 const Container = styled.div`
+  width: 100%;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@ const Container = styled.div`
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
-    width: 50%;
+  width: 50%;
 `;
 
 export function SectionSlide(props) {
@@ -24,7 +25,7 @@ export function SectionSlide(props) {
         naturalSlideWidth={200}
         naturalSlideHeight={300}
         totalSlides={4}
-        visibleSlides={1}
+        visibleSlides={2}
       >
         <Slider>
           <Slide index={0}>
