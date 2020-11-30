@@ -18,10 +18,38 @@ const StyledCarouselProvider = styled(CarouselProvider)`
   width: 50%;
 `;
 
+const StyledDotGroup = styled(DotGroup)`
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  button {
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    border: none;
+    outline: none;
+
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+  }
+  .carousel dot--selected {
+    background-color: #c4c4c4;
+  }
+`;
+
+const StyledSlide = styled(Slide)`
+  .carousel__inner-slide {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
 export function SectionSlide(props) {
   return (
     <Container>
-      <CaptionText style={{color: 'white'}}>View My Works</CaptionText>
+      <CaptionText style={{ color: "white" }}>View My Works</CaptionText>
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={200}
@@ -29,20 +57,20 @@ export function SectionSlide(props) {
         visibleSlides={2}
       >
         <Slider>
-          <Slide index={0}>
+          <StyledSlide index={0}>
             <CardView />
-          </Slide>
-          <Slide index={1}>
+          </StyledSlide>
+          <StyledSlide index={1}>
             <CardView />
-          </Slide>
-          <Slide index={2}>
+          </StyledSlide>
+          <StyledSlide index={2}>
             <CardView />
-          </Slide>
-          <Slide index={3}>
+          </StyledSlide>
+          <StyledSlide index={3}>
             <CardView />
-          </Slide>
+          </StyledSlide>
         </Slider>
-        <DotGroup />
+        <StyledDotGroup />
       </StyledCarouselProvider>
     </Container>
   );
