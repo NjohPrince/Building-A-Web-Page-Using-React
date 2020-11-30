@@ -8,4 +8,4 @@ FONT AWESOME:  npm i --save @fortawesome/fontawesome-svg-core
                
 Made use of react smooth scroll 
                
-        Website Include MANIPULATION OF REACT COMPONENTS, STYLES, AND RESPONSIVENESS, WORK IN PROGRESS
+        Web Page Include MANIPULATION OF REACT COMPONENTS, STYLES, AND RESPONSIVENESS, WORK IN PROGRESS
