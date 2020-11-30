@@ -7,7 +7,7 @@ import rowImage from "../assets/images/cont.jfif";
 
 const Container = styled(Element)`
   width: 100%;
-  min-height: 250px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;

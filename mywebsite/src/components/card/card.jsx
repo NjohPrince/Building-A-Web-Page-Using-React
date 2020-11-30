@@ -6,7 +6,8 @@ const Container = styled.div`
   height: 250px;
   background-color: #fff;
   box-shadow: 0px 0px 8px rgba(17, 17, 17, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
+  border: 2px solid yellow;
 `;
 
 export function CardView(props) {

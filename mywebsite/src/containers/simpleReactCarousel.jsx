@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { CarouselProvider, Slide, Slider } from "pure-react-carousel";
+import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
 import { CaptionText } from "../components/textCaption/caption";
 import { CardView } from "../components/card/card";
 
 const Container = styled.div`
   width: 100%;
-  height: 800px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
@@ -20,10 +21,10 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 export function SectionSlide(props) {
   return (
     <Container>
-      <CaptionText>View My Works</CaptionText>
+      <CaptionText style={{color: 'white'}}>View My Works</CaptionText>
       <StyledCarouselProvider
         naturalSlideWidth={200}
-        naturalSlideHeight={300}
+        naturalSlideHeight={200}
         totalSlides={4}
         visibleSlides={2}
       >
@@ -41,6 +42,7 @@ export function SectionSlide(props) {
             <CardView />
           </Slide>
         </Slider>
+        <DotGroup />
       </StyledCarouselProvider>
     </Container>
   );
