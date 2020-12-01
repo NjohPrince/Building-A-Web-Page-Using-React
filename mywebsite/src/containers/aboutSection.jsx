@@ -7,10 +7,14 @@ import rowImage from "../assets/images/cont.jfif";
 
 const Container = styled(Element)`
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 755px) {
+    height: 600px;
+  }
 `;
 
 export function AboutSection(props) {
@@ -18,8 +22,9 @@ export function AboutSection(props) {
     <Container name="AboutSection">
       <CaptionText>About Me</CaptionText>
       <SingleRow
-        name="Learn and Grow Together"
+        name="#CodeLover"
         descript="Just a CodeLover, who helps others acquire such skills too"
+        name2="#ProgrammingGeek"
         imgURL={rowImage}
       />
     </Container>

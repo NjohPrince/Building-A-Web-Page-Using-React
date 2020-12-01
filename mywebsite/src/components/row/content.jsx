@@ -4,6 +4,10 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 755px) {
+    flex-direction: column;
+  }
 `;
 
 const ContainerImg = styled.img`
@@ -19,25 +23,28 @@ const ImgDescription = styled.div`
 `;
 
 const Name = styled.h2`
-  color: #000;
-  font-size: 27px;
+  color: yellow;
+  font-size: 25px;
   font-weight: bold;
   margin: 0;
+  border-bottom: 1px solid yellow;
 `;
 
 const Description = styled.h6`
   color: gray;
   font-size: 20px;
-  font-weight: bold
+  font-weight: bold;
+  text-align: center;
 `;
 
 export function SingleRow(props) {
-  const { name, descript, imgURL } = props;
+  const { name, descript, name2, imgURL } = props;
   return (
     <Container>
       <ImgDescription>
         <Name>{name}</Name>
         <Description>{descript}</Description>
+        <Name>{name2}</Name>
       </ImgDescription>
       <ContainerImg src={imgURL} />
     </Container>

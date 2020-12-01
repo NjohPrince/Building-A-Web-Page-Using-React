@@ -14,11 +14,17 @@ const Container = styled.div`
   padding: 5px;
   margin: 15px;
   border: 1px solid grey;
+  transition: 0.5s;
+
+  &: hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
 `;
 
 const ContainerImg = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   align-items: center;
