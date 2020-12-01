@@ -8,7 +8,7 @@ import rowImage from "../assets/images/cont.jfif";
 
 const Container = styled.div`
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,12 +16,13 @@ const Container = styled.div`
 
 const StyledCarouselProvider = styled(CarouselProvider)`
   width: 50%;
+  border-right: 1px solid yellow;
 `;
 
 const StyledDotGroup = styled(DotGroup)`
   display: flex;
   justify-content: center;
-  margin: 5px;
+  margin: 3px;
   button {
     height: 5px;
     background-color: #e4e4e4;
@@ -50,8 +51,8 @@ export function SectionSlide(props) {
     <Container>
       <CaptionText>View My Works</CaptionText>
       <StyledCarouselProvider
-        naturalSlideWidth={200}
-        naturalSlideHeight={200}
+        naturalSlideWidth={300}
+        naturalSlideHeight={350}
         totalSlides={4}
         visibleSlides={2}
       >
