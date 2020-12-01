@@ -4,6 +4,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
 import { CaptionText } from "../components/textCaption/caption";
 import { CardView } from "../components/card/card";
+import rowImage from "../assets/images/cont.jfif";
 
 const Container = styled.div`
   width: 100%;
@@ -11,7 +12,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
@@ -23,19 +23,18 @@ const StyledDotGroup = styled(DotGroup)`
   justify-content: center;
   margin: 5px;
   button {
-    width: 10px;
-    height: 11px;
-    border-radius: 50%;
+    height: 5px;
     background-color: #e4e4e4;
     border: none;
     outline: none;
+    border: 1px solid gray;
 
     &:not(:last-of-type) {
       margin-right: 5px;
     }
   }
-  .carousel dot--selected {
-    background-color: #c4c4c4;
+  .carousel__dot--selected {
+    background-color: yellow;
   }
 `;
 
@@ -49,7 +48,7 @@ const StyledSlide = styled(Slide)`
 export function SectionSlide(props) {
   return (
     <Container>
-      <CaptionText style={{ color: "white" }}>View My Works</CaptionText>
+      <CaptionText>View My Works</CaptionText>
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={200}
@@ -58,16 +57,32 @@ export function SectionSlide(props) {
       >
         <Slider>
           <StyledSlide index={0}>
-            <CardView />
+            <CardView
+              imgURL={rowImage}
+              name="Front-End"
+              descript="Just a CodeLover, who helps others acquire such skills too"
+            />
           </StyledSlide>
           <StyledSlide index={1}>
-            <CardView />
+            <CardView
+              imgURL={rowImage}
+              name="Back-End"
+              descript="Just a CodeLover, who helps others acquire such skills too"
+            />
           </StyledSlide>
           <StyledSlide index={2}>
-            <CardView />
+            <CardView
+              imgURL={rowImage}
+              name="Management Systems"
+              descript="Just a CodeLover, who helps others acquire such skills too"
+            />
           </StyledSlide>
           <StyledSlide index={3}>
-            <CardView />
+            <CardView
+              imgURL={rowImage}
+              name="System Designer"
+              descript="Just a CodeLover, who helps others acquire such skills too"
+            />
           </StyledSlide>
         </Slider>
         <StyledDotGroup />
