@@ -14,7 +14,9 @@ const Container = styled.div`
 export function FooterSection(props) {
   return (
     <Container>
-      
+      <FooterContent header="Usefull Links" description="testing" />
+      <FooterContent header="Usefull Links" description="testing" />
+      <FooterContent header="Usefull Links" description="testing" />
     </Container>
   );
 }
