@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AboutSection } from './aboutSection';
+import { FooterSection } from './footer';
 import { SectionUp } from './LandingPageContent';
 import { SectionSlide } from './simpleReactCarousel';
 
@@ -17,6 +18,7 @@ export function LandingPage(props){
       <SectionUp />
       <AboutSection />
       <SectionSlide />
+      <FooterSection />
     </HomeContainer>
     );
 }
