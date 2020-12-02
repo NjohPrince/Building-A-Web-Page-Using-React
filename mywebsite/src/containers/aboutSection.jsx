@@ -12,8 +12,13 @@ const Container = styled(Element)`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 755px) {
-    height: 600px;
+
+  @media screen and (max-width: 1177px) {
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 942px) {
+    margin-bottom: 185px;
   }
 `;
 
@@ -23,7 +28,7 @@ export function AboutSection(props) {
       <CaptionText>About Me</CaptionText>
       <SingleRow
         name="#CodeLover"
-        descript="Just a CodeLover, who helps others acquire such skills too"
+        descript="Just a CodeLover, who helps others acquire such skills too, Proficient at Algorithm development, Skillfull arts, graphics and sketches "
         name2="#ProgrammingGeek"
         imgURL={rowImage}
       />

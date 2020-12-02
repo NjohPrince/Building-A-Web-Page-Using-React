@@ -49,10 +49,6 @@ const StyledSlide = styled(Slide)`
   .carousel__inner-slide {
     display: flex;
     justify-content: center;
-
-    @media screen and (max-width: 998px) {
-      height: 2px;
-    }
   }
 `;
 

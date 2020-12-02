@@ -34,7 +34,7 @@ export function FooterSection(props) {
       <FooterContent header="Location" description="Molyko, Buea, CAMEROON" />
       <CopyContainer>
         <CopywriteMessage>
-          strawby-designs | copywrite &copy 2020
+          strawby-designs | copywrite &copy; 2020
         </CopywriteMessage>
       </CopyContainer>
     </Container>

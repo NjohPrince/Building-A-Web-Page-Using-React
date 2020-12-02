@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const ContainerImg = styled.img`
-  width: 22em;
+  flex: 1;
   height: 18em;
 
   @media screen and (max-width: 480px) {
@@ -21,9 +21,8 @@ const ContainerImg = styled.img`
 `;
 
 const ImgDescription = styled.div`
-  display: flex;
+  flex: 1;
   flex-direction: column;
-  max-width: 100%;
   align-items: center;
   @media screen and (max-width: 480px) {
     order: 2;
@@ -31,18 +30,15 @@ const ImgDescription = styled.div`
 `;
 
 const Name = styled.h2`
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: 1px solid yellow;
+  color: darkgray;
+  text-align: center;
 `;
 
-const Description = styled.h6`
+const Description = styled.h5`
   color: gray;
-  font-size: 20px;
-  font-weight: bold;
   text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
 `;
 
 export function SingleRow(props) {
@@ -51,8 +47,8 @@ export function SingleRow(props) {
     <Container>
       <ImgDescription>
         <Name>{name}</Name>
-        <Description>{descript}</Description>
         <Name>{name2}</Name>
+        <Description>{descript}</Description>
       </ImgDescription>
       <ContainerImg src={imgURL} />
     </Container>
