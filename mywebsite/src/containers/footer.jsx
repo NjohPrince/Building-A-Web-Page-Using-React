@@ -14,9 +14,9 @@ const Container = styled.div`
 export function FooterSection(props) {
   return (
     <Container>
-      <FooterContent header="Usefull Links" description="testing" />
-      <FooterContent header="Usefull Links" description="testing" />
-      <FooterContent header="Usefull Links" description="testing" />
+      <FooterContent header="Company" description="Strawby-Geek" />
+      <FooterContent header="Small Biography" description="Some Experience with Programming Languages: 'Java, C/C++, Python', Web-Developer: 'HTML/CSS/JavaScript, Reactjs, PHP'" />
+      <FooterContent header="Location" description="Molyko, Buea, CAMEROON" />
     </Container>
   );
 }

@@ -6,7 +6,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid gray;
   margin-top: 30px;
   margin-bottom: 30px;
 
@@ -17,6 +16,7 @@ const Container = styled.div`
   @media screen and (max-width: 719px) {
     width: 95%;
     margin-top: 15px;
+    border-bottom: 1px solid gray;
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
@@ -31,7 +31,10 @@ const NameHead = styled.h3`
 `;
 
 const NameBody = styled.h5`
-  color: white;
+  color: gray;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
 `;
 
 export function FooterContent(props) {
