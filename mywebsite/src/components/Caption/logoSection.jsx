@@ -29,6 +29,10 @@ const Text = styled.div`
   color: white;
   font-weight: bold;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 29px;
+  }
 `;
 
 export function LogoAndContent(props) {
