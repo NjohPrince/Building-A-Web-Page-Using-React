@@ -5,10 +5,11 @@ import { FooterContent } from "../components/footerComponent/footerContent";
 const Container = styled.div`
   width: 100%;
   background-color: black;
-  min-height: 300px;
+  min-height: 230px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border-bottom: 1px solid gray;
 `;
 
 export function FooterSection(props) {
