@@ -6,24 +6,29 @@ import { CaptionText } from "../components/textCaption/caption";
 import { CardView } from "../components/card/card";
 import rowImage from "../assets/images/cont.jfif";
 import rowImage2 from "../assets/images/images.png";
+import { useMediaQuery } from "react-responsive";
 
 const Container = styled.div`
   width: 100%;
-  min-height: 500px;
+  min-height: 499px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
-  width: 50%;
-  border-right: 1px solid yellow;
+  width: 80%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const StyledDotGroup = styled(DotGroup)`
   display: flex;
   justify-content: center;
-  margin: 3px;
+  margin-bottom: 35px;
+
   button {
     height: 5px;
     background-color: #e4e4e4;
@@ -44,19 +49,24 @@ const StyledSlide = styled(Slide)`
   .carousel__inner-slide {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 998px) {
+      height: 2px;
+    }
   }
 `;
 
 export function SectionSlide(props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 799px)" });
   return (
     <Container>
       <CaptionText>Services I Offer</CaptionText>
       <StyledCarouselProvider
         naturalSlideWidth={300}
-        naturalSlideHeight={350}
+        naturalSlideHeight={250}
         totalSlides={4}
-        visibleSlides={2}
-        dragEnabled={false}
+        visibleSlides={isMobile ? 1 : 2}
+        dragEnabled={isMobile ? true : false}
       >
         <Slider>
           <StyledSlide index={0}>

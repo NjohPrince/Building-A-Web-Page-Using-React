@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 370px;
-  height: 270px;
+  height: 250px;
   background-color: #fff;
   box-shadow: 0px 0px 15px rgba(17, 17, 17, 0.2);
   border-radius: 3px;
@@ -13,11 +13,11 @@ const Container = styled.div`
   justify-content: center;
   padding: 5px;
   margin: 15px;
-  border: 1px solid grey;
+  border: 1px solid gray;
   transition: 0.5s;
 
   &: hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     transition: 0.5s;
   }
 `;

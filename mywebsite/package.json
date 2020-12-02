@@ -13,6 +13,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hover-animation": "^2.1.1",
+    "react-responsive": "^8.2.0",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
