@@ -5,9 +5,9 @@ import { FooterContent } from "../components/footerComponent/footerContent";
 const Container = styled.div`
   width: 100%;
   background-color: black;
-  height: 50vh;
+  min-height: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 `;
 
