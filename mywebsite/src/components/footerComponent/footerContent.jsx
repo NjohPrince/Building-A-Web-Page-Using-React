@@ -16,9 +16,9 @@ const Container = styled.div`
   @media screen and (max-width: 719px) {
     width: 95%;
     margin-top: 15px;
-    border-bottom: 1px solid gray;
     &:not(:last-of-type) {
       margin-bottom: 0;
+      border-bottom: 1px solid gray;
     }
     &(last-of-type) {
       margin-bottom: 0px;
