@@ -13,6 +13,11 @@ const Container = styled.div`
 const ContainerImg = styled.img`
   width: 22em;
   height: 18em;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    order: 1;
+  }
 `;
 
 const ImgDescription = styled.div`
@@ -20,10 +25,13 @@ const ImgDescription = styled.div`
   flex-direction: column;
   max-width: 100%;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    order: 2;
+  }
 `;
 
 const Name = styled.h2`
-  color: yellow;
+  color: black;
   font-size: 25px;
   font-weight: bold;
   margin: 0;
