@@ -29,7 +29,7 @@ export function FooterSection(props) {
       <FooterContent header="Company" description="Strawby-Geek" />
       <FooterContent
         header="Small Biography"
-        description="Some Experience with Programming Languages: 'Java, C/C++, Python', Web-Developer: 'HTML/CSS/JavaScript, Reactjs, PHP'"
+        description="Some Experience with Programming Languages: 'Java, C/C++, Python', Web-Developer: 'HTML/CSS/JavaScript, Reactjs, NODEjs, PHP'"
       />
       <FooterContent header="Location" description="Molyko, Buea, CAMEROON" />
       <CopyContainer>
